@@ -1,9 +1,9 @@
 # extend from the node the script is attached to
 extends KinematicBody2D
 
-const MAX_SPEED = 100
-const ACCELERATION = 10
-const FRICTION = 10
+const MAX_SPEED = 80
+const ACCELERATION = 500
+const FRICTION = 500
 
 var velocity = Vector2.ZERO
 
@@ -23,8 +23,11 @@ func _physics_process(delta):
 		# friction, if not pressing any keys, reduce the velocity slowly
 		velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)
 	else:
-		velocity += input_vector * ACCELERATION * delta
+		velocity = velocity.move_toward(input_vector * MAX_SPEED, ACCELERATION * delta)
 		# capped the speed
-		velocity = velocity.limit_length(MAX_SPEED * delta)
+		#velocity += input_vector * ACCELERATION * delta		
 
-	move_and_collide(velocity)
+	#move_and_collide(velocity * delta)
+	# move_and_slide() will handle the delta inside the function
+	# returned the velocity after the collision
+	velocity = move_and_slide(velocity)
