@@ -7,7 +7,8 @@ const FRICTION = 500
 
 var velocity = Vector2.ZERO
 var animationPlayer = null 
-var animationName = "IdleRight"
+var animationTree = null
+var animationState = null
 # alternative to _ready() function
 # onready var animationPlayer = $AnimationPlayer
 
@@ -18,6 +19,9 @@ func _ready():
 	# only accessible when the game starts
 	# or use the onready var
 	animationPlayer = $AnimationPlayer 
+	animationTree = $AnimationTree
+	# get the AnimationPlayer from the AnimationTree, this is the FSM
+	animationState = animationTree.get("parameters/playback")
 
 # called every tick 1/60 sec
 func _physics_process(delta):
@@ -28,23 +32,20 @@ func _physics_process(delta):
 	# normalized the vector the unit lenght, reduced the diagonal speed of the sprite
 	input_vector = input_vector.normalized()
 	
-	if input_vector.x > 0:
-		animationName = "RunRight"
-	elif input_vector.x < 0:
-		animationName = "RunLeft"
-	else:
-		if animationName == "RunRight":
-			animationName = "IdleRight"
-		elif animationName == "RunLeft":
-			animationName = "IdleLeft"
-			
-	animationPlayer.play(animationName)
-	
 	if input_vector == Vector2.ZERO:
 		# friction, if not pressing any keys, reduce the velocity slowly
+		animationState.travel("Idle")
 		velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)
 	else:
+		# setting the blend position
+		# the value is from the Idle blend position in the inspector window of AnimationTree
+		# add .1 to the Y axis in the animation tree (Idle/Run) to get it to prioritize left/right over up/down
+		animationTree.set("parameters/Idle/blend_position", input_vector)
+		animationTree.set("parameters/Run/blend_position", input_vector)
+		# Run is the node name in the AnimationTree
+		animationState.travel("Run")
 		velocity = velocity.move_toward(input_vector * MAX_SPEED, ACCELERATION * delta)
+		
 		# capped the speed
 		#velocity += input_vector * ACCELERATION * delta		
 
