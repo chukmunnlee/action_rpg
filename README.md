@@ -9,4 +9,5 @@
 5. [P5 | AnimationPlayer](https://www.youtube.com/watch?v=TQKXU7iSWUU&list=PL9FzW-m48fn2SlrW0KoLT4n5egNdX-W9a&index=5)
 6. [P6 | Animation in all directions with an AnimationTree](https://www.youtube.com/watch?v=TQKXU7iSWUU&list=PL9FzW-m48fn2SlrW0KoLT4n5egNdX-W9a&index=6)
 7. [P7 | Background Grass and Dirt Path Autotile](https://www.youtube.com/watch?v=TQKXU7iSWUU&list=PL9FzW-m48fn2SlrW0KoLT4n5egNdX-W9a&index=7)
+8. [P8 | Collisions with Autotiles](https://www.youtube.com/watch?v=TQKXU7iSWUU&list=PL9FzW-m48fn2SlrW0KoLT4n5egNdX-W9a&index=8)
 
