@@ -11,4 +11,5 @@
 7. [P7 | Background Grass and Dirt Path Autotile](https://www.youtube.com/watch?v=TQKXU7iSWUU&list=PL9FzW-m48fn2SlrW0KoLT4n5egNdX-W9a&index=7)
 8. [P8 | Collisions with Autotiles](https://www.youtube.com/watch?v=TQKXU7iSWUU&list=PL9FzW-m48fn2SlrW0KoLT4n5egNdX-W9a&index=8)
 9. [P9 | Attacking Animation + State Machines](https://www.youtube.com/watch?v=TQKXU7iSWUU&list=PL9FzW-m48fn2SlrW0KoLT4n5egNdX-W9a&index=9)
+9. [P10| Signals + Instancing Scenes in Code](https://www.youtube.com/watch?v=TQKXU7iSWUU&list=PL9FzW-m48fn2SlrW0KoLT4n5egNdX-W9a&index=10)
 
