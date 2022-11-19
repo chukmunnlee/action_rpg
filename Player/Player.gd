@@ -32,6 +32,8 @@ func _ready():
 	animationState = animationTree.get("parameters/playback")
 	# start the animation tree when the game starts
 	animationTree.active = true
+	# Disable the collisionshape when the player is instantiated
+	$HitboxPiviot/SwordHitbox/CollisionShape2D.disabled = true
 
 # called every tick 1/60 sec
 func _physics_process(delta):
