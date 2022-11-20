@@ -13,6 +13,7 @@
 9. [P9 | Attacking Animation + State Machines](https://www.youtube.com/watch?v=TQKXU7iSWUU&list=PL9FzW-m48fn2SlrW0KoLT4n5egNdX-W9a&index=9)
 10. [P10| Signals + Instancing Scenes in Code](https://www.youtube.com/watch?v=TQKXU7iSWUU&list=PL9FzW-m48fn2SlrW0KoLT4n5egNdX-W9a&index=10)
 11. [P11 | Melee attacks with Hurtboxes and Hitboxes](https://www.youtube.com/watch?v=TQKXU7iSWUU&list=PL9FzW-m48fn2SlrW0KoLT4n5egNdX-W9a&index=11)
-11. [P12 | Roll State](https://www.youtube.com/watch?v=TQKXU7iSWUU&list=PL9FzW-m48fn2SlrW0KoLT4n5egNdX-W9a&index=12)
+12. [P12 | Roll State](https://www.youtube.com/watch?v=TQKXU7iSWUU&list=PL9FzW-m48fn2SlrW0KoLT4n5egNdX-W9a&index=12)
+13. [P13 | Knockback and Enemy Bat](https://www.youtube.com/watch?v=TQKXU7iSWUU&list=PL9FzW-m48fn2SlrW0KoLT4n5egNdX-W9a&index=13)
 
 

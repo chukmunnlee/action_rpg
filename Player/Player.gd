@@ -19,6 +19,7 @@ var roll_vector = Vector2.DOWN
 var animationPlayer = null 
 var animationTree = null
 var animationState = null
+var swordHitbox = null
 # alternative to _ready() function
 # onready var animationPlayer = $AnimationPlayer
 
@@ -37,6 +38,8 @@ func _ready():
 	# Disable the collisionshape when the player is instantiated
 	$HitboxPiviot/SwordHitbox/CollisionShape2D.disabled = true
 	
+	swordHitbox = $HitboxPiviot/SwordHitbox
+	swordHitbox.knockback_vector = roll_vector
 
 # called every tick 1/60 sec
 func _physics_process(delta):
@@ -60,6 +63,7 @@ func move_state(delta):
 	if input_vector != Vector2.ZERO:
 		
 		roll_vector = input_vector
+		swordHitbox.knockback_vector = input_vector
 		# setting the blend position
 		# the value is from the Idle blend position in the inspector window of AnimationTree
 		# add .1 to the Y axis in the animation tree (Idle/Run) to get it to prioritize left/right over up/down
