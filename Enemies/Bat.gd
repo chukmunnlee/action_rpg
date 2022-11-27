@@ -1,7 +1,12 @@
 extends KinematicBody2D
 
 var knockback = Vector2.ZERO
-onready var stats = $Stats
+var damage = null
+onready var stats = $Stats	
+
+func _ready():
+	damage = $Damage
+	damage.damage = stats.health
 
 func _physics_process(delta):
 	knockback = knockback.move_toward(Vector2.ZERO, 200 * delta)
@@ -12,6 +17,8 @@ func _on_Hurtbox_area_entered(area):
 	# area is the Hitbox, damage is from the base class
 	# knockback_vector is from SwordHitbox which extends Hitbox
 	stats.health -= area.damage 
+	damage.damage = stats.health
+	
 	knockback = area.knockback_vector * 120
 	# knockback = Vector2.RIGHT * 120
 	#queue_free()
