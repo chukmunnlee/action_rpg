@@ -1,10 +1,8 @@
 extends Node2D
 
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
+# Preload the GrassEffect scene instead of loading when there is 
+# a collision with the Hurtbox
+const GrassEffect = preload("res://Effects/GrassEffect.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -30,7 +28,7 @@ func _ready():
 func create_grass_effect():
 	# Alternative way of performing effect as show in the video
 	# Load the GrassEffect scene
-	var GrassEffect = load("res://Effects/GrassEffect.tscn")
+	# var GrassEffect = load("res://Effects/GrassEffect.tscn")
 	# Instantiate the scene
 	var grassEffect = GrassEffect.instance()
 	# Sets the position of the effect

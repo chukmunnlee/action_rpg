@@ -16,4 +16,6 @@
 12. [P12 | Roll State](https://www.youtube.com/watch?v=TQKXU7iSWUU&list=PL9FzW-m48fn2SlrW0KoLT4n5egNdX-W9a&index=12)
 13. [P13 | Knockback and Enemy Bat](https://www.youtube.com/watch?v=TQKXU7iSWUU&list=PL9FzW-m48fn2SlrW0KoLT4n5egNdX-W9a&index=13)
 14. [P14 | Enemy Stats + Export Variables + Setget](https://www.youtube.com/watch?v=TQKXU7iSWUU&list=PL9FzW-m48fn2SlrW0KoLT4n5egNdX-W9a&index=14)
+15. [P15 | Enemy Death Effect + Bug Fixes](https://www.youtube.com/watch?v=TQKXU7iSWUU&list=PL9FzW-m48fn2SlrW0KoLT4n5egNdX-W9a&index=15)
+
 
