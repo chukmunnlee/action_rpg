@@ -19,5 +19,8 @@
 15. [P15 | Enemy Death Effect + Bug Fixes](https://www.youtube.com/watch?v=TQKXU7iSWUU&list=PL9FzW-m48fn2SlrW0KoLT4n5egNdX-W9a&index=15)
 16. [P16 | Bat AI Start](https://www.youtube.com/watch?v=TQKXU7iSWUU&list=PL9FzW-m48fn2SlrW0KoLT4n5egNdX-W9a&index=16)
 
+## References
 
+- [Vector math](https://docs.godotengine.org/en/stable/tutorials/math/vector_math.html)
+- [Matrices and transformation](https://docs.godotengine.org/en/stable/tutorials/math/matrices_and_transforms.html)
 
