@@ -21,6 +21,7 @@ var state = CHASE
 onready var stats = $Stats
 onready var playerDetectionZone = $PlayerDetectionZone
 onready var sprite = $AnimatedSprite
+onready var hurtbox = $Hurtbox
 
 func _ready():
 	damage = $Damage
@@ -59,6 +60,8 @@ func _on_Hurtbox_area_entered(area):
 	# knockback_vector is from SwordHitbox which extends Hitbox
 	stats.health -= area.damage 
 	damage.damage = stats.health
+	
+	hurtbox.create_hit_effect()
 	
 	knockback = area.knockback_vector * 120
 	# knockback = Vector2.RIGHT * 120

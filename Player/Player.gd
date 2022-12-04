@@ -6,6 +6,9 @@ export var ROLL_SPEED = 100
 export var ACCELERATION = 500
 export var FRICTION = 500
 
+# Singleton
+var stats = PlayerStats
+
 enum {
 	MOVE,
 	ROLL,
@@ -20,6 +23,7 @@ var animationPlayer = null
 var animationTree = null
 var animationState = null
 var swordHitbox = null
+var hurtbox = null
 # alternative to _ready() function
 # onready var animationPlayer = $AnimationPlayer
 
@@ -40,6 +44,12 @@ func _ready():
 	
 	swordHitbox = $HitboxPiviot/SwordHitbox
 	swordHitbox.knockback_vector = roll_vector
+	
+	# Player hurtbox
+	hurtbox = $Hurtbox
+	
+	# connect playerStats signal
+	stats.connect("no_health", self, "queue_free")
 
 # called every tick 1/60 sec
 func _physics_process(delta):
@@ -116,3 +126,9 @@ func attack_animation_finished():
 	
 func move():
 	velocity = move_and_slide(velocity)
+
+func _on_Hurtbox_area_entered(area):
+	print("player hit box entered")
+	stats.health -= 1
+	hurtbox.start_invincibility(0.5)
+	hurtbox.create_hit_effect() 

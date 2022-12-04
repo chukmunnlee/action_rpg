@@ -18,6 +18,7 @@
 14. [P14 | Enemy Stats + Export Variables + Setget](https://www.youtube.com/watch?v=TQKXU7iSWUU&list=PL9FzW-m48fn2SlrW0KoLT4n5egNdX-W9a&index=14)
 15. [P15 | Enemy Death Effect + Bug Fixes](https://www.youtube.com/watch?v=TQKXU7iSWUU&list=PL9FzW-m48fn2SlrW0KoLT4n5egNdX-W9a&index=15)
 16. [P16 | Bat AI Start](https://www.youtube.com/watch?v=TQKXU7iSWUU&list=PL9FzW-m48fn2SlrW0KoLT4n5egNdX-W9a&index=16)
+17. [P17 | Player Stats + Enemy Attack](https://www.youtube.com/watch?v=TQKXU7iSWUU&list=PL9FzW-m48fn2SlrW0KoLT4n5egNdX-W9a&index=17)
 
 ## References
 

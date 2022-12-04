@@ -5,7 +5,7 @@ signal no_health
 # Exposes the max_health variable to the Inspector
 # Optionally specify the type in the ()
 # See https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_exports.html
-export(int) var max_health = 1
+export(int) var max_health = 4
 
 # Getter and setter functions
 onready var health = max_health setget set_health
